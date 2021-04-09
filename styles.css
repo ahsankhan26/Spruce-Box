@@ -1,0 +1,180 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+li, a, .contact button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8.5%;
+    position: absolute;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.navLinks li:hover{
+    background-color: rgba(255,255,255,.1);
+}
+
+li.mblContact {
+    display: none;
+}
+
+.contact button{
+    padding: 8px 40px;
+    background-color: transparent;
+    border: 1px solid #edf0f1;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+.contact button:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 5px;
+}
+
+/* Section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+.overlay{
+    z-index: 0;
+    background-color: rgba(49,51,59,0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section img{
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.heroContent{
+    z-index: 1;
+}
+.heroContent h1 {
+    font-size: 2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1090px){
+    .contact button{
+        padding: 8px 30px;
+    }
+    .navLinks li{
+        padding: 8px 14px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .contact button{
+        padding: 5px 15px;
+    }
+    .navLinks li{
+        padding: 8px 12px;
+    }
+}
+
+
+@media screen and (max-width: 950px){
+    body{
+        overflow-x: hidden;
+    }
+    .navLinks{
+        padding-top: 50px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(49,51,59,0.75);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+    }
+    .navLinks li{
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+    }
+    li.mblContact{
+        display: block;
+    }
+    .contact button {
+        display: none;
+    }
+    .hamburger{
+        float: right;
+        display: block;
+        transition: all 0.4s ease-in;
+    }
+}
+
+.nav-active{
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+.hamburger-active{
+    padding-right: 200px;
+}
