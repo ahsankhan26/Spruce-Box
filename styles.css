@@ -1,5 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@font-face {
+    font-family: D-DIN;
+    src: url('fonts/D-DIN.ttf');
+}
+@font-face {
+    font-family: D-DINEXP;
+    src: url('fonts/D-DINExp.ttf');
+}
 
 *{
     box-sizing: border-box;
@@ -8,6 +16,24 @@
 }
 body{
     font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 8px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mt-5{
+    margin-top: 5%;
 }
 
 /* Navbar */
@@ -59,12 +85,8 @@ li.mblContact {
 }
 
 .contact button{
-    padding: 8px 40px;
     background-color: transparent;
     border: 1px solid #edf0f1;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
 }
 .contact button:hover{
     background-color: rgba(255,255,255,0.1);
@@ -81,18 +103,14 @@ li.mblContact {
     margin: 5px;
 }
 
-/* Section */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* HERO */
 .hero{
     position: relative;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
     color: white;
+    overflow: hidden;
 }
 .overlay{
     z-index: 0;
@@ -104,16 +122,67 @@ section {
     height: 100%;
 }
 section img{
+    z-index: -1;
     top: 0;
     position: absolute;
-    z-index: -1;
-    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .heroContent{
     z-index: 1;
+    font-family: D-DINExp;
 }
 .heroContent h1 {
-    font-size: 2rem;
+    top: 10;
+    margin-bottom: 1%;
+    font-size: 2.5rem;
+}
+.subhead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30%;
+}
+.subhead p{
+    font-size: 13px;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 25px;
+}
+.heroContent button{
+    padding: 15px 40px;
+    background-color: #fdfdfd;
+    color: rgba(49,51,59,1);
+    font-family: D-DINExp;
+}
+.heroContent button:hover{
+    background-color: #c9c9c9;
+}
+.covid{
+    z-index: 1;
+    padding: 8px 40px;
+    margin: 0 10px;
+    background-color: rgba(161,161,161,0.25);
+    border-radius: 12px;
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #edf0f1;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 10px;
+}
+.covid img{
+    position: inherit;
+    vertical-align: middle;
+}
+.covid p:first-child{
+    font-size: 11px;
+    font-weight: 700;
 }
 
 /* Media Queries */
@@ -126,7 +195,7 @@ section img{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1010px){
     .contact button{
         padding: 5px 15px;
     }
@@ -141,17 +210,15 @@ section img{
         overflow-x: hidden;
     }
     .navLinks{
-        padding-top: 50px;
+        transition: all 0.5s ease-in-out;
         position: absolute;
         right: 0px;
-        top: 0;
-        height: 100vh;
         background-color: rgba(49,51,59,0.75);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
-        transform: translateX(100%);
+        width: 100%;
+        transform: translateY(-120%);
     }
     .navLinks li{
         border-radius: 0;
@@ -167,14 +234,19 @@ section img{
     .hamburger{
         float: right;
         display: block;
-        transition: all 0.4s ease-in;
     }
 }
 
-.nav-active{
-    transition: all 0.5s ease;
-    transform: translateX(0%);
+@media screen and (max-width: 500px){
+    .covid{
+        padding: 8px;
+    }
+    .subhead{
+        padding: 0 15%;
+    }
+
 }
-.hamburger-active{
-    padding-right: 200px;
+
+.nav-active{
+    transform: translateY(10%);
 }
