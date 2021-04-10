@@ -103,7 +103,7 @@ li.mblContact {
     margin: 5px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero{
     position: relative;
     justify-content: center;
@@ -121,7 +121,7 @@ li.mblContact {
     width: 100%;
     height: 100%;
 }
-section img{
+.hero img{
     z-index: -1;
     top: 0;
     position: absolute;
@@ -185,6 +185,84 @@ section img{
     font-weight: 700;
 }
 
+/* DETAILS SECTION */
+.details{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdfd;
+}
+.details p:first-child{
+    font-weight: 700;
+    color: #FF593E;
+}
+.details h1{
+    width: 50%;
+    margin: 1%;
+    text-align: center;
+    top: 10;
+    margin-bottom: 1%;
+    font-size: 2.5rem;
+    color: #31333B;
+}
+.grid{
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    width: 22vw;
+    background-color: lightcoral;
+}
+.col2{
+    width: 40vw;
+}
+.col div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridImg{
+    max-width: 100%;
+    width: 70%;
+}
+.gridBtn {
+    font-family: D-DINExp;
+    font-weight: 700;
+    font-size: 20px;
+    background: #F7F8FC;
+    color: #31333B
+}
+.gridBtn:hover{
+    color: #fdfdfd;
+    background-color: #3121E3;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+}
+.gridTxt{
+    color: #31333B;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Arrow */
+.arrow {
+    color: #FF593E;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.gridImg1{
+    align-items: center;
+}
+  
+
+
 /* Media Queries */
 @media screen and (max-width: 1090px){
     .contact button{
@@ -203,7 +281,6 @@ section img{
         padding: 8px 12px;
     }
 }
-
 
 @media screen and (max-width: 950px){
     body{
@@ -235,6 +312,10 @@ section img{
         float: right;
         display: block;
     }
+    .gridBtn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -243,6 +324,9 @@ section img{
     }
     .subhead{
         padding: 0 15%;
+    }
+    .details h1{
+        width: 90%;
     }
 
 }
