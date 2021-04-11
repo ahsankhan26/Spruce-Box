@@ -299,6 +299,32 @@ li.mblContact {
     transition: all 0.3s ease-in-out;
 }
 
+.arrow1{
+    position: absolute;
+    width: 150px;
+    left: -50px;
+    top: 80px;
+    filter: invert(81%) sepia(31%) saturate(13%) hue-rotate(270deg) brightness(100%) contrast(103%); 
+}
+.arrow2{
+    position: absolute;
+    width: 150px;
+    top: 360px;
+    left: 0;
+}
+.arrow3{
+    position: absolute;
+    width: 130px;
+    top: 107px;
+    right: -57px;
+}
+.arrow4{
+    position: absolute;
+    width: 170px;
+    bottom: 54px;
+    right: -54px;
+}
+
 .gridImg1{
     align-items: center;
 }
@@ -354,14 +380,14 @@ li.mblContact {
         float: right;
         display: block;
     }
-    .gridBtn {
+    /* .gridBtn {
         padding: 8px 15px;
         font-size: 12px;
     }
     .gridTxt{
         font-size: 9px;
         text-align: center;
-    }
+    } */
 }
 
 @media screen and (max-width: 500px){
