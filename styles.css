@@ -194,7 +194,6 @@ li.mblContact {
     margin: 10% 0;
     width: 100%;
     height: 100%;
-    /* background-color: #fdfdfd; */
 }
 .details p:first-child{
     font-weight: 700;
@@ -266,7 +265,7 @@ li.mblContact {
     position: absolute;
     width: 190px;
     top: 50%;
-    left: 43.5%;
+    left: 44%;
 }
 .gridBtn {
     font-family: D-DINExp;
@@ -289,6 +288,7 @@ li.mblContact {
     color: #31333B;
     font-size: 0.8rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .arrow {
@@ -380,14 +380,73 @@ li.mblContact {
         float: right;
         display: block;
     }
-    /* .gridBtn {
-        padding: 8px 15px;
-        font-size: 12px;
+    .gridImg1{
+        width: 165px;
     }
-    .gridTxt{
-        font-size: 9px;
-        text-align: center;
-    } */
+    .gridImg2{
+        width: 227px;
+    }
+    .gridImg3{
+        width: 176px;
+        left: 7px;
+    }
+    .gridImg4{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .gridBtn{
+        padding: 8px 20px;
+    }
+    .gridImg3{
+        left: 1%;
+        top: 43.5%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .gridImg3{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .gridImg3{
+        left: -1%;
+    }
+}
+@media screen and (max-width: 860px){
+    .gridImg3{
+        left: -2%;
+    }
+}
+@media screen and (max-width: 860px){
+    .gridBtn{
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .gridBtn{
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .gridImg1{
+        width: 145px;
+    }
+    .gridImg2{
+        width: 207px;
+    }
+    .gridImg3{
+        width: 156px;
+        left: 0;
+    }
+    .gridImg4{
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 500px){
