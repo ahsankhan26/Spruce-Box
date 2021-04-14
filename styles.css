@@ -1,10 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
 @font-face {
-    font-family: D-DIN;
-    src: url('fonts/D-DIN.ttf');
-}
-@font-face {
     font-family: D-DINEXP;
     src: url('fonts/D-DINExp.ttf');
 }
@@ -208,7 +204,6 @@ li.mblContact {
     color: #31333B;
 }
 .grid{
-    /* background-color: lightcyan; */
     margin: 6% 2%;
     display: flex;
     justify-content: center;
@@ -219,7 +214,6 @@ li.mblContact {
     flex-direction: column;
     align-items: center;
     margin: 1%;
-    /* background-color: lightcoral; */
 }
 .col1{
     flex: 1;
@@ -330,8 +324,6 @@ li.mblContact {
     align-items: center;
 }
   
-
-
 /* Media Queries */
 @media screen and (max-width: 1090px){
     .contact button{
@@ -478,7 +470,6 @@ li.mblContact {
         font-size: 0.6rem;
     }
 }
-
 @media screen and (max-width: 700px){
     .arrow, .arrow1, .arrow2, .arrow3, .arrow4{
         display: none;
