@@ -209,6 +209,7 @@ li.mblContact {
 }
 .grid{
     /* background-color: lightcyan; */
+    margin: 6% 2%;
     display: flex;
     justify-content: center;
 }
@@ -309,7 +310,7 @@ li.mblContact {
 .arrow2{
     position: absolute;
     width: 150px;
-    top: 360px;
+    top: 75%;
     left: 0;
 }
 .arrow3{
@@ -321,7 +322,7 @@ li.mblContact {
 .arrow4{
     position: absolute;
     width: 170px;
-    bottom: 54px;
+    bottom: 15%;
     right: -54px;
 }
 
@@ -409,6 +410,18 @@ li.mblContact {
     .gridImg3{
         left: 0;
     }
+    .arrow1{
+        width: 130px;
+    }
+    .arrow2{
+        width: 130px;
+    }
+    .arrow3{
+        width: 130px;
+    }
+    .arrow4{
+        width: 130px;
+    }
 }
 
 @media screen and (max-width: 880px){
@@ -420,8 +433,6 @@ li.mblContact {
     .gridImg3{
         left: -2%;
     }
-}
-@media screen and (max-width: 860px){
     .gridBtn{
         padding: 8px 15px;
     }
@@ -430,6 +441,18 @@ li.mblContact {
 @media screen and (max-width: 800px){
     .gridBtn{
         padding: 8px 10px;
+    }
+    .arrow1{
+        width: 100px;
+    }
+    .arrow2{
+        width: 100px;
+    }
+    .arrow3{
+        width: 100px;
+    }
+    .arrow4{
+        width: 100px;
     }
 }
 
@@ -442,10 +465,51 @@ li.mblContact {
     }
     .gridImg3{
         width: 156px;
-        left: 0;
+        top: 42%;
+        left: -1%;
     }
     .gridImg4{
         width: 150px;
+    }
+    .gridBtn{
+        font-size: 15px;
+    }
+    .gridTxt{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .arrow, .arrow1, .arrow2, .arrow3, .arrow4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gridImg1{
+        width: 40%;
+    }
+    .gridImg2{
+        width: 50%;
+    }
+    .gridImg3{
+        width: 40%;
+        top: 40%;
+        left: 0%;
+    }
+    .gridImg4{
+        width: 40%;
+        top: 45%;
+        left: 42%;
+    }
+    .details h1{
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .gridBtn{
+        font-size: 12px;
     }
 }
 
@@ -456,7 +520,18 @@ li.mblContact {
     .subhead{
         padding: 0 15%;
     }
-
+    .gridImg3{
+        top: 38%;
+    }
+    .gridImg4{
+        top: 41%;
+    }
+    .gridTxt{
+        font-size: 0.5rem;
+    }
+    .arrow1{
+        top: 65px;
+    }
 }
 
 .nav-active{
